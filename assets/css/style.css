@@ -72,7 +72,7 @@ h6 {
 #topbar {
   padding: 0;
   font-size: 15px;
-  height: 50px;
+  height: 55px;
   transition: all 0.5s;
   background: rgba(26, 24, 22, 0.8);
   z-index: 996;
@@ -102,7 +102,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  top: 50px;
+  top: 80px;
   height: 70px;
   z-index: 997;
   transition: all 0.5s;
@@ -213,7 +213,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #ffb03b;
 }
 
@@ -250,11 +250,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #ffb03b;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -266,7 +266,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -278,7 +278,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -346,7 +346,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #ffb03b;
 }
 
@@ -381,11 +381,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #ffb03b;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -621,11 +621,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -679,7 +679,7 @@ section {
   padding: 0;
 }
 
-.about .content ul li+li {
+.about .content ul li + li {
   margin-top: 15px;
 }
 
@@ -776,7 +776,6 @@ section {
 }
 
 @media (max-width: 1024px) {
-
   .about .content,
   .about .accordion-list {
     padding-left: 0;
@@ -823,9 +822,9 @@ section {
   color: #ffcf88;
 }
 
-.why-us::before{
+.why-us::before {
   z-index: 1;
-  content: 'ss';
+  content: "ss";
   top: 0;
   left: 0;
   position: absolute;
@@ -906,7 +905,9 @@ section {
 }
 
 .menu .menu-content::after {
-  content: "......................................................................" "...................................................................." "....................................................................";
+  content: "......................................................................"
+    "...................................................................."
+    "....................................................................";
   position: absolute;
   left: 20px;
   right: 0;
@@ -963,12 +964,12 @@ section {
 }
 
 .specials .nav-link:hover {
-  color: #ffb03b;
+  color: #a0956e;
 }
 
 .specials .nav-link.active {
-  color: #ffb03b;
-  border-color: #ffb03b;
+  color: #a0956e;
+  border-color: #a0956e;
 }
 
 .specials .tab-pane.active {
@@ -998,7 +999,7 @@ section {
 
   .specials .nav-link.active {
     color: #fff;
-    background: #ffb03b;
+    background: #a0956e;
   }
 }
 
@@ -1127,7 +1128,7 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .error-message br+br {
+.book-a-table .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1174,7 +1175,7 @@ section {
   padding: 10px 12px;
 }
 
-.book-a-table .php-email-form button[type=submit] {
+.book-a-table .php-email-form button[type="submit"] {
   background: #ffb03b;
   border: 0;
   padding: 10px 24px;
@@ -1183,7 +1184,7 @@ section {
   border-radius: 50px;
 }
 
-.book-a-table .php-email-form button[type=submit]:hover {
+.book-a-table .php-email-form button[type="submit"]:hover {
   background: #ffa012;
 }
 
@@ -1533,7 +1534,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #ffb03b;
   border: 0;
   padding: 10px 24px;
@@ -1542,7 +1543,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #ffa012;
 }
 
@@ -1612,4 +1613,80 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+@media (max-width: 1500px) {
+  #home {
+    width: 35rem;
+  }
+}
+@media (max-width: 1350px) {
+  #home {
+    width: 30rem;
+  }
+}
+@media (max-width: 1200px) {
+  #home {
+    width: 30rem;
+  }
+}
+@media (max-width: 1020px) {
+  #home {
+    width: 25rem;
+  }
+}
+@media (max-width: 990px) {
+  #home {
+    width: 25rem;
+  }
+  #flowers {
+    width: 25rem;
+  }
+  #home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .welcome-text {
+    text-align: center;
+    width: 70%;
+  }
+  #about {
+    flex-direction: column-reverse;
+  }
+  #about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #about-text {
+    text-align: center;
+    width: 70%;
+  }
+}
+
+@media (max-width: 775px) {
+  .col-xl-3 {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  #about-container {
+    margin: 0%;
+    margin-bottom: 1rem;
+  }
+  #flowers {
+    width: 16rem;
+  }
+  #home {
+    width: 20rem;
+  }
 }
