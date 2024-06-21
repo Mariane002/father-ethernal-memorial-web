@@ -58,18 +58,21 @@
     var subject = document.getElementById("subject").value;
     var message = document.getElementById("message").value;
 
-    fetch("http://127.0.0.1:8000/api/mailer", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        subjects: subject,
-        messages: message,
-      }),
-    })
+    fetch(
+      "https://our-father-api-marianes-projects-12b97551.vercel.app/api/api/mailer",
+      {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subjects: subject,
+          messages: message,
+        }),
+      }
+    )
       .then((response) => {
         if (response.ok) {
           return response.text();
@@ -94,37 +97,6 @@
           );
         }
       });
-
-    // fetch(action, {
-    //   method: "POST",
-    //   body: formData,
-    //   headers: { "X-Requested-With": "XMLHttpRequest" },
-    // })
-    //   .then((response) => {
-    //     if (response.ok) {
-    //       return response.text();
-    //     } else {
-    //       throw new Error(
-    //         `${response.status} ${response.statusText} ${response.url}`
-    //       );
-    //     }
-    //   })
-    //   .then((data) => {
-    //     thisForm.querySelector(".loading").classList.remove("d-block");
-    //     if (data.trim() == "OK") {
-    //       thisForm.querySelector(".sent-message").classList.add("d-block");
-    //       thisForm.reset();
-    //     } else {
-    //       throw new Error(
-    //         data
-    //           ? data
-    //           : "Form submission failed and no error message returned from: " +
-    //             action    //       );
-    //     }
-    //   })
-    //   .catch((error) => {
-    //     displayError(thisForm, error);
-    //   });
   }
 
   function displayError(thisForm, error) {
