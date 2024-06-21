@@ -15,7 +15,7 @@
     die( 'Unable to load the "PHP Email Form" Library!');
   }
 
-  $book_a_table = new PHP_Email_Form;
+  // $book_a_table = new PHP_Email_Form;
   $book_a_table->ajax = true;
   
   $book_a_table->to = $receiving_email_address;

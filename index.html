@@ -20,8 +20,6 @@
   <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -33,6 +31,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+
   <!-- =======================================================
   * Template Name: Delicious
   * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
@@ -40,6 +39,8 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -49,8 +50,12 @@
     style="background-color: #052D43; min-height: 5rem;">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center ">
         <div class="d-flex flex-column align-items-center justify-content-center">
-          <h2 style="font-family: 'times-new-roman'; margin-top: 1rem; color:#a0956e; ">Our Father</h2>
-        <h5 style="color: a0956e; font-family: 'Times New Roman', Times, serif;" >Treasuring Memories</h5>
+ 
+        <div class="d-flex flex-row " >
+          <img src="/assets/img/our-father-logo.png" style="width: 4rem; margin-right: 1rem;"  >
+          <img src="/assets/img/our-father-logo-text.png" style="height: 4rem;"  >
+          
+        </div>
         </div>
     </div>
   </section>
@@ -58,55 +63,20 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center " style="background-color:  #0d4665;">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center">
-
-      <!-- <div class="logo me-auto"> -->
-      <!-- <h1><a href="index.html">Delicious  </a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      <!-- </div> -->
-
       <nav id="navbar" class="navbar order-last order-lg-0 ">
         <ul class="">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#welcome">About</a></li>
           <li><a href="#FAQ">FAQ's</a></li>
          
-          <li><a href="#Ourteam">Our Team</a></li>
           <li><a href="#services">Services</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#FAQ">FAQ's</a></li>
-         
-              <li><a href="#Ourteam">Our Team</a></li>
-              <li><a href="#services">Services</a></li> -->
-                   <!-- <li class="dropdown"><a href="#services"><span>Memorialization Options</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#services">Traditional Burial Plots</a></li>
-                  <li><a href="#services">Cremation Gardens</a></li>
-                  <li><a href="#services">Mausoleum</a></li>
-                  <li><a href="#services">Memorial Walls</a></li>
-                  <li><a href="#services" >Custom Memorial Options</a></li>
-                </ul>
-              </li> -->
-                   <!-- <li class="dropdown"><a href="#services"><span>Cremation Services</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#services">Cremation Ceremonies</a></li>
-                  <li><a href="#services">Life Celebrations</a></li>
-                  <li><a href="#services">Amenities</a></li>
-                  <li><a href="#services">Memorial Walls</a></li>
-                </ul>
-              </li> -->
-           
-            <!-- </ul>
-          </li> -->
+        
           <li><a class="nav-link scrollto" href="#contact">Contacts</a></li>
    
-          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <!-- <a href="#book-a-table" class="book-a-table-btn scrollto">Book a table</a> -->
 
     </div>
   </header><!-- End Header -->
@@ -134,7 +104,7 @@
                   <div>
                     <!-- <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> -->
                     <!-- <button type="submit">Send Message</button> -->
-                    <a data-filter="*" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; " href="#about"
+                    <a data-filter="*" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; " href="#welcome"
                       class="btn-book animate__animated animate__fadeInUp scrollto">Explore</a>
                   </div>
                 </div>
@@ -158,9 +128,9 @@
 
 
     <div class="d-flex align-items-center justify-content-center m-4">
-   <div class="flex-column">
+   <div class="flex-column" data-aos="fade-up" >
 <div>
-  <img style="min-width: 8px; max-width: 13rem;" src="assets/img/slide/divider-eternal.png" alt="">
+  <img style="min-width: 8px; max-width: 14rem;" src="assets/img/slide/divider-eternal.png" alt="">
 
 </div>
     <h1 style="font-family: 'Times New Roman', Times, serif;" class="align-items-center justify-content-center d-flex" >Our Services</h1>
@@ -169,7 +139,7 @@
     <div class="d-flex align-items-center justify-content-center m-4  px-xl-5">
       <div class="container-fluid row justify-content-evenly px-4 my-5  ">
         
- <div class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2 m-2 d-flex align-items-center justify-content-center" >
+ <div data-aos="fade-up"  class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2 m-2 d-flex align-items-center justify-content-center" >
   <div  class="card " style="width: 22rem; background-color:#052D43; color: aliceblue; border-radius: 0%; ">
     <div class="card-body ">
       <div class="flex-column d-flex align-items-center justify-content-center">
@@ -187,7 +157,7 @@
   </div>
  </div>
 
-  <div class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2 m-2 d-flex align-items-center justify-content-center" >
+  <div data-aos="fade-up"  class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2 m-2 d-flex align-items-center justify-content-center" >
     <div class="card " style="width: 22rem; background-color:#052D43; color: aliceblue; border-radius: 0%;">
       <div class="card-body ">
         <div class="flex-column d-flex align-items-center justify-content-center">
@@ -205,7 +175,7 @@
     </div>
   </div>
 
-<div class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2 m-2 d-flex align-items-center justify-content-center" >
+<div data-aos="fade-up"  class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2 m-2 d-flex align-items-center justify-content-center" >
   <div class="card " style="width: 22rem; background-color:#052D43; color: aliceblue; border-radius: 0%;">
     <div class="card-body ">
       <div class="flex-column d-flex align-items-center justify-content-center">
@@ -224,8 +194,8 @@
       </div>
 
     </div>
-    <section style="background-color: #eeeeee;  " >
-      <div class="container-fluid">
+    <section   style="background-color: #eeeeee; " id="welcome"  >
+      <div class="container-fluid" data-aos="fade-up" >
   
         <div class="row d-flex align-items-center justify-content-center">
           <!-- <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
@@ -240,14 +210,13 @@
               honor and remember your loved ones. Discover our wide range of services, beautiful garden settings, and
               personalized memorialization options.
             </p>
-            <div>
-              <button type="button" style="background-color: #88775d; color: aliceblue;   "
-                class="px-5 py-3 btn rounded-0">Read more</button>
-  
-            </div>
+            <a href="/welcome-page.html">
+              <button type="button"  style="background-color: #88775d; color: aliceblue;   "
+              class="px-5 py-3 btn rounded-0">Read more</button>
+            </a>
           </div>
           <div class="col-lg-4" id="home-container">
-            <img src="assets/img/slide/home-black.jpg" id="home"  class="mb-4 " alt="">
+            <img src="assets/img/graveyard.jpg" id="home"  class="mb-4"   alt="">
           </div>
         </div>
   
@@ -258,8 +227,8 @@
       </div>
     </section>
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container-fluid">
+    <section   id="about" class="about">
+      <div class="container-fluid" data-aos="fade-up">
 
         <div class="row d-flex align-items-center justify-content-center" id="about">
           <!-- <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
@@ -278,8 +247,10 @@
               reflection, and natural beauty for visitors and families.
             </p>
             <div>
-              <button type="button" style="background-color: #88775d; color: aliceblue;   "
-                class="px-5 py-3 btn rounded-0">Read more</button>
+            <a href="/about-page.html">
+              <button type="button"  style="background-color: #88775d; color: aliceblue;   "
+              class="px-5 py-3 btn rounded-0">Read more</button>
+            </a>
             </div>
           </div>
 
@@ -288,240 +259,133 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Whu Us Section ======= -->    <section id="why-us" class="why-us"
-      style="position: relative; background-image: url(assets/img/slide/white-cross-cemetery.jpg); background-size: cover; ">
-      <div class="container p-5">
+    <!-- ======= Whu Us Section ======= -->   
+      <section id="why-us" class="why-us" 
+      style="position: relative; background-image: url(assets/img/slide/white-cross-cemetery.jpg); background-size: cRover; ">
+    <div class="container p-5" >
 
-        <H1
-          style="font-family: 'Times New Roman', Times, serif; color: rgb(255, 255, 255); z-index: 2; position: relative; text-align: center;">
-          We believe in creating a serene environment that honors the memories of those who have passed. Our values
-          include respect, compassion, and dedication to maintaining the garden's natural beauty.</H1>
-          <h5 style="font-family: 'Times New Roman', Times, serif;  color: rgb(255, 255, 255); z-index: 2; position: relative; text-align: center;">-Mission and Values </h5>
+      <H1 data-aos="fade-up"
+        style="font-family: 'Times New Roman', Times, serif; color: rgb(255, 255, 255); z-index: 2; position: relative; text-align: center;">
+        We believe in creating a serene environment that honors the memories of those who have passed. Our values
+        include respect, compassion, and dedication to maintaining the garden's natural beauty.</H1>
+        <h5 data-aos="fade-up" style="font-family: 'Times New Roman', Times, serif;  color: rgb(255, 255, 255); z-index: 2; position: relative; text-align: center;">-Mission and Values </h5>
 
-      </div>
+  </div>
     </section><!-- End Whu Us Section -->
 
-    <!-- ======= Ourteam Section ======= -->
-    <section id="Ourteam" class="menu">
-      <div class="">
 
-     <div class="container" >
-      
-      <div class="section-title">
-        <img style="min-width: 8px; max-width: 12rem;" src="assets/img/slide/divider-eternal.png" alt="">
-
-        <h1 style="font-family: 'Times New Roman', Times, serif;">Our Team </h1>
-      </div>
-      <div class="section-title">
-        <h4 style="font-family: 'Times New Roman', Times, serif;">Meet the 
-          compassionate and dedicated team that maintains and operates Our
-           Father Eternal and Memorial Garden. We are here to support you through every 
-           step of the memorialization process.</h4>
-
-      </div>
-     </div>
-
-        <!-- <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">Show All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
-              <li data-filter=".filter-specialty">Specialty</li>
-            </ul>
-          </div>
-        </div> -->
-<div class="container-fluid py-3 px-xl-5 " style="background-color: #eeeeeeee;">
-        <div class="row menu-container justify-content-evenly my-5" >
-      <div class=" col-xl-3 col-lg-4 col-md-4 d-flex align-items-center justify-content-center mx-xl-5"  >
-        <div class="card p-0 " style="width: 18rem;  ">
-          <img class="card-img-top" src="/assets/img/slide/default-avatar-icon-of-social-media-user-vector.jpg" style="height: 16rem;" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-title"> [First Name] [Last Name] </p>
-            <p class="text-muted">[Position title]</p>
-            <p class="card-text">sample@gmail.com</p>
-            <p class="card-text">63+ 9123456789</p>
-          </div>
-        </div>
-      </div>
-          <div class=" col-xl-3 col-lg-4 col-md-4 d-flex align-items-center justify-content-center  " >
-          <div class="card p-0 " style="width: 18rem;height: inherit;">
-            <img class="card-img-top" src="/assets/img/slide/default-avatar-icon-of-social-media-user-vector.jpg" style="height: 16rem;" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-title"> [First Name] [Last Name] </p>
-              <p class="text-muted">[Position title]</p>
-              <p class="card-text">sample@gmail.com</p>
-              <p class="card-text">63+ 9123456789</p>
-            </div>
-          </div>
-        </div>
-
-        <div class=" col-xl-3 col-lg-4  col-md-4 d-flex align-items-center justify-content-center mx-xl-5">
-          <div class="card p-0 " style="width: 18rem;">
-            <img class="card-img-top" src="/assets/img/slide/default-avatar-icon-of-social-media-user-vector.jpg" style="height: 16rem;" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-title"> [First Name] [Last Name] </p>
-              <p class="text-muted">[Position title]</p>
-              <p class="card-text">sample@gmail.com</p>
-              <p class="card-text">63+ 9123456789</p>
-            </div>
-          </div>
-        </div>
-        </div>
-      
-        <div class="row menu-container justify-content-evenly my-5" >
-      <div class=" col-xl-3 col-lg-4 col-md-4 d-flex align-items-center justify-content-center mx-xl-5"  >
-        <div class="card p-0 " style="width: 18rem;  ">
-          <img class="card-img-top" src="/assets/img/slide/default-avatar-icon-of-social-media-user-vector.jpg" style="height: 16rem;" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-title"> [First Name] [Last Name] </p>
-            <p class="text-muted">[Position title]</p>
-            <p class="card-text">sample@gmail.com</p>
-            <p class="card-text">63+ 9123456789</p>
-          </div>
-        </div>
-      </div>
-          <div class=" col-xl-3 col-lg-4 col-md-4 d-flex align-items-center justify-content-center  " >
-          <div class="card p-0 " style="width: 18rem;height: inherit;">
-            <img class="card-img-top" src="/assets/img/slide/default-avatar-icon-of-social-media-user-vector.jpg" style="height: 16rem;" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-title"> [First Name] [Last Name] </p>
-              <p class="text-muted">[Position title]</p>
-              <p class="card-text">sample@gmail.com</p>
-              <p class="card-text">63+ 9123456789</p>
-            </div>
-          </div>
-        </div>
-
-        <div class=" col-xl-3 col-lg-4  col-md-4 d-flex align-items-center justify-content-center mx-xl-5">
-          <div class="card p-0 " style="width: 18rem;">
-            <img class="card-img-top" src="/assets/img/slide/default-avatar-icon-of-social-media-user-vector.jpg" style="height: 16rem;" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-title"> [First Name] [Last Name] </p>
-              <p class="text-muted">[Position title]</p>
-              <p class="card-text">sample@gmail.com</p>
-              <p class="card-text">63+ 9123456789</p>
-            </div>
-          </div>
-        </div>
-        </div>
-      
-        
-       
-        </div>
-      </div>
-      </div>
-    </section><!-- End Menu Section -->
 
     <!-- ======= Specials Section ======= -->
     <section id="services" class="specials pb-0">
-      <div class="container m-5-auto">
+      <div class="container m-5-auto" >
         
-        <div class="d-flex align-items-center justify-content-center m-4">
+        <div class="d-flex align-items-center justify-content-center m-4" data-aos="fade-up" >
          <div class="flex-column">
-          <img style="min-width: 8px; max-width: 8.5rem;" src="assets/img/slide/divider-eternal.png" alt="">
+          <img style="min-width: 8px; max-width: 10rem;" src="assets/img/slide/divider-eternal.png" alt="">
           <h1 style="font-family: 'Times New Roman', Times, serif; margin: 0; " class="d-flex align-items-center justify-content-center" >Services</h1>
          </div> 
         </div>
         
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up" >
           <p>Our Father Eternal and Memorial Garden offers a variety of services to help you memorialize your loved ones in a peaceful and respectful manner. Explore our options to find the perfect way to honor their memory.</p>
         </div>
-        <h2 style="font-family: 'Times New Roman', Times, serif; " class="my-3" >Memorialization Options</h2>
+    <div data-aos="fade-up" >
+      <h2 style="font-family: 'Times New Roman', Times, serif; " class="my-3" >Memorialization Options</h2>
 
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a   class="nav-link active show" data-bs-toggle="tab" href="#ta-1">Traditional Burial Plots</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#ta-2">Cremation Gardens</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#ta-3">Mausoleum</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#ta-4">Memorial Walls</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#ta-5">Custom Memorial Options</a>
-              </li>
-           
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-4 ">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="ta-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h2 style="font-family: 'Times New Roman', Times, serif;" >Traditional Burial Plots</h2>
-                    <p class="fst-italic"> Peaceful burial plots surrounded by beautiful gardens and trees.</p>
-                    <p>Our traditional burial plots provide a serene resting place surrounded by the natural beauty of our gardens. Each plot offers a peaceful environment for families to visit and pay their respects.</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/traditional_burial_plots.jpg" alt="" class="img-fluid">
-                  </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a   class="nav-link active show" data-bs-toggle="tab" href="#ta-1">Traditional Burial Plots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#ta-2">Cremation Gardens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#ta-3">Mausoleum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#ta-4">Memorial Walls</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#ta-5">Custom Memorial Options</a>
+            </li>
+         
+          </ul>
+        </div>
+        <div class="col-lg-9 mt-4 mt-lg-4 ">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="ta-1">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h2 style="font-family: 'Times New Roman', Times, serif;" >Traditional Burial Plots</h2>
+                  <p class="fst-italic"> Peaceful burial plots surrounded by beautiful gardens and trees.</p>
+                  <p>Our traditional burial plots provide a serene resting place surrounded by the natural beauty of our gardens. Each plot offers a peaceful environment for families to visit and pay their respects.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/traditional_burial_plots.jpg" alt="" class="img-fluid">
                 </div>
               </div>
-              <div class="tab-pane" id="ta-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h2 style="font-family: 'Times New Roman', Times, serif;" >Cremation Gardens</h2>
-                    <p class="fst-italic">Beautiful settings for the cremated remains of your loved ones, including cremation benches, trees, and urns.</p>
-                    <p> Our cremation gardens offer various memorial options such as cremation benches, cremation trees, and cremation urns. Each garden is designed to provide a tranquil setting for the cremated remains of your loved ones.</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/cremation-garden.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="ta-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h2 style="font-family: 'Times New Roman', Times, serif;" >Mausoleum</h2>
-                    <p class="fst-italic"> Our stately mausoleum provides an elegant and dignified resting place, offering both individual and family crypts.</p>
-                    <p> Our stately mausoleum offers an elegant and dignified resting place. With options for both individual and family crypts, the mausoleum provides a serene and secure environment for honoring your loved ones.</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/mouslom.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="ta-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h2 style="font-family: 'Times New Roman', Times, serif;" >Memorial Walls</h2>
-                    <p class="fst-italic">Unique and durable walls for personalized and fitting tributes.</p>
-                    <p>Our memorial walls are crafted from beautiful and durable materials, offering a unique way to honor your loved ones. Choose from a variety of design options to create a personalized tribute.</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/memorial-wall.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="ta-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h2 style="font-family: 'Times New Roman', Times, serif;" >Custom Memorial Options</h2>
-                    <p class="fst-italic">Create a truly unique tribute that reflects the life and legacy of your loved one.</p>
-                    <p> For those seeking a truly unique and personalized tribute, we offer custom memorial options. Our team will work with you to explore all possibilities and create a memorial that reflects the life and legacy of your loved one.</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/custom-memorial.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-        
             </div>
+            <div class="tab-pane" id="ta-2">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h2 style="font-family: 'Times New Roman', Times, serif;" >Cremation Gardens</h2>
+                  <p class="fst-italic">Beautiful settings for the cremated remains of your loved ones, including cremation benches, trees, and urns.</p>
+                  <p> Our cremation gardens offer various memorial options such as cremation benches, cremation trees, and cremation urns. Each garden is designed to provide a tranquil setting for the cremated remains of your loved ones.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/cremation-garden.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="ta-3">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h2 style="font-family: 'Times New Roman', Times, serif;" >Mausoleum</h2>
+                  <p class="fst-italic"> Our stately mausoleum provides an elegant and dignified resting place, offering both individual and family crypts.</p>
+                  <p> Our stately mausoleum offers an elegant and dignified resting place. With options for both individual and family crypts, the mausoleum provides a serene and secure environment for honoring your loved ones.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/mouslom.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="ta-4">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h2 style="font-family: 'Times New Roman', Times, serif;" >Memorial Walls</h2>
+                  <p class="fst-italic">Unique and durable walls for personalized and fitting tributes.</p>
+                  <p>Our memorial walls are crafted from beautiful and durable materials, offering a unique way to honor your loved ones. Choose from a variety of design options to create a personalized tribute.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/memorial-wall.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="ta-5">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h2 style="font-family: 'Times New Roman', Times, serif;" >Custom Memorial Options</h2>
+                  <p class="fst-italic">Create a truly unique tribute that reflects the life and legacy of your loved one.</p>
+                  <p> For those seeking a truly unique and personalized tribute, we offer custom memorial options. Our team will work with you to explore all possibilities and create a memorial that reflects the life and legacy of your loved one.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/custom-memorial.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+      
           </div>
         </div>
+      </div>
+    </div>
 
       </div>
     </section><!-- End Specials Section -->
 
     <section id="services" class="specials pb-0">
-      <div class="container m-5-auto">
+      <div class="container m-5-auto" data-aos="fade-up">
         <h2 style="font-family: 'Times New Roman', Times, serif; " class="my-3" >Cremation Services</h2>
 
         <div class="row">
@@ -573,7 +437,7 @@
     </section>
 
     <section id="services" class="specials pt-2">
-      <div class="container m-5-auto">
+      <div class="container m-5-auto" data-aos="fade-up">
         <h2 style="font-family: 'Times New Roman', Times, serif; " class="my-3" >Event Rentals</h2>
 
         <div class="row">
@@ -624,12 +488,12 @@
 
       </div>
     </section>
-<section id="FAQ" >
+<section id="FAQ"  style="background-color: #eeeeee;">
 
+ 
+  <div class="container p-5"  style="background-color: white;" data-aos="fade-up">
 
-  <div class="container p-5" >
-
-    <h2 style="font-family: 'Times New Roman', Times, serif; " class="m-3" >Frequently Asked Questions:</h2>
+    <h2 style="font-family: 'Times New Roman', Times, serif; " class="m-3" >Frequently Asked Questions</h2>
 
     <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
@@ -679,25 +543,22 @@
  
      <!-- ======= Contact Section ======= -->
      <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
+      <div class="container" >
+        <div class="section-title" data-aos="fade-up">
+          <img style="min-width: 20px; max-width: 13rem;" src="assets/img/slide/divider-eternal.png" alt="">
           <h1 style="font-family: 'Times New Roman', Times, serif;" >Contact Us</h1>
           <p>Thank you for visiting Our Father Eternal and Memorial Garden's website. We are here to support you and answer any questions you may have. Please feel free to get in touch with us using the information below.</p>
         </div>
       </div>
 
-      <div class="map">
-        <iframe style="border:0; width: 100%; height: 350px;"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Municipality%20of%20Diffun%20HF39+8J8,%20National%20Road,%20Diffun,%203401%20Quirino+(Our%20Father)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          frameborder="0" allowfullscreen></iframe>
+    
         
-        </div>
-
-      <div class="container mt-5">
-
+      <div class="container mt-2" data-aos="fade-up">
         <div class="info-wrap">
           <div class="row">
+            <div class="info d-flex align-items-center justify-content-center  my-4 ">
+       <img src="/assets/img/contact-logo.png" style="height:  8rem;" alt="">
+            </div>
             <div class="col-lg-3 col-md-6 info">
               <i class="bi bi-geo-alt"></i>
               <h4>Location:</h4>
@@ -723,8 +584,12 @@
             </div>
           </div>
         </div>
-
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <div class="map d-flex flex-row">
+          <iframe  id="map-image" 
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Municipality%20of%20Diffun%20HF39+8J8,%20National%20Road,%20Diffun,%203401%20Quirino+(Our%20Father)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            frameborder="0" allowfullscreen></iframe>
+          </div>
+        <form    class="php-email-form" role="form" >
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -737,7 +602,7 @@
             <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
           </div>
           <div class="my-3">
             <div class="loading">Loading</div>
@@ -748,14 +613,15 @@
         </form>
 
       </div>
+      
     </section><!-- End Contact Section -->
-
+  
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3 style="font-family: 'Times New Roman', Times, serif; color: aliceblue;" >Ethernal</h3>
+      <h3 style="font-family: 'Times New Roman', Times, serif; color: aliceblue;" >OUR FATHER</h3>
       <p>Our Father Eternal and Memorial Garden, where we provide a serene and natural environment to honor and remember your loved ones.</p>
 
   
@@ -767,11 +633,18 @@
       class="bi bi-arrow-up-short"></i></a> -->
 
   <!-- Vendor JS Files -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
 <script>
   import { Collapse, initMDB } from 'mdb-ui-kit';
@@ -780,9 +653,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-    AOS.init();
-  </script>
+ 
 </body>
 
 </html>

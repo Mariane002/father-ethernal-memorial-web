@@ -559,7 +559,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .section-title h2 {
@@ -824,7 +824,7 @@ section {
 
 .why-us::before {
   z-index: 1;
-  content: "ss";
+  content: " ";
   top: 0;
   left: 0;
   position: absolute;
@@ -1459,6 +1459,24 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+#map-image {
+  width: 100%;
+  border: 0;
+  height: 350px;
+  position: relative;
+}
+#map-image::after {
+  content: "test";
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(204, 115, 26, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
@@ -1613,6 +1631,9 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+#home {
+  width: 35rem;
 }
 @media (max-width: 1500px) {
   #home {
