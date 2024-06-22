@@ -59,7 +59,8 @@
     var message = document.getElementById("message").value;
 
     fetch(
-      "https://our-father-api-marianes-projects-12b97551.vercel.app/api/api/mailer",
+      // "https://our-father-api-marianes-projects-12b97551.vercel.app/api/api/mailer",
+      "http://127.0.0.1:8000/api/mailer",
       {
         method: "POST",
         headers: {
