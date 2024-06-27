@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffb03b;
+  background: #052d43;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ffc064;
+  background: #052d43;
   color: #fff;
 }
 
@@ -1694,6 +1694,15 @@ section {
   }
 }
 
+#logo-ourfather {
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+#slogan {
+  height: 4rem;
+}
+
 @media (max-width: 775px) {
   .col-xl-3 {
     padding-bottom: 2rem;
@@ -1709,5 +1718,13 @@ section {
   }
   #home {
     width: 20rem;
+  }
+}
+@media (max-width: 390px) {
+  #logo-ourfather {
+    width: 3rem;
+  }
+  #slogan {
+    height: 3rem;
   }
 }
