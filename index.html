@@ -47,12 +47,12 @@
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent"
-    style="background-color: #052D43; min-height: 5rem;">
+    style="background-color: none;">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center ">
         <div class="d-flex flex-column align-items-center justify-content-center">
  
      <a href="/index.html">
-      <div class="d-flex flex-row " >
+      <div class="d-flex flex-row "  style="background-color: #fafcfe; padding: 1rem; border-radius: 2rem;  ">
         <img src="/assets/img/our-father-logo.png" id="logo-ourfather"  >
         <img src="/assets/img/our-father-logo-text.png" id="slogan" >
       </div>
@@ -62,18 +62,39 @@
   </section>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center " style="background-color:  #0d4665;">
+  <header id="header" class="fixed-top d-flex align-items-center " style="background-color:  none;">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center">
       <nav id="navbar" class="navbar order-last order-lg-0 ">
         <ul class="">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#welcome">About</a></li>
-          
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+               <li class="dropdown">
+            <a href="#services" 
+            class="nav-link scrollto"  ><span>Services</span> <i class="bi bi-chevron-down"></i
+            ></a>
+            <ul>
+              <li><a href="memorialization-page.html">Memorialization</a></li>
+              <!-- <li class="dropdown">
+                <a href="#"
+                  ><span>Deep Drop Down</span>
+                  <i class="bi bi-chevron-right"></i
+                ></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="cremation-service-page.html">Cremation Services</a></li>
+              <li><a href="event-rentals.html">Event Rentals</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="#FAQ">FAQ's</a></li>
         
           <li><a class="nav-link scrollto" href="#contact">Contacts</a></li>
-   
+     
         </ul>
         <i class="bi bi-list mobile-nav-toggle mx-3"  ></i>
       </nav><!-- .navbar -->
@@ -86,18 +107,21 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-        <!-- <ol class="carousel-indicators" id="hero-carousel-indicators"></ol> -->
-
+      <div 
+      id="heroCarousel" 
+      data-bs-interval="3000" 
+      class="carousel slide carousel-fade" 
+      data-bs-ride="carousel"
+      >
         <div class="carousel-inner" role="listbox">
-
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url(assets/img/slide/burning-candles.jpg);">
+                <!-- <div class="container p-4 " style="margin-top: 3rem; background-color: #a89e7d;"> -->
+
+          <div class="carousel-item active" style="background-image: url(assets/img/gallery/Memorial+Park-1-2.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <div class="container p-4 " style="margin-top: 5rem; background-color: #052d43;">
-                  <img style="min-width: 20px; max-width: 20rem;" src="assets/img/slide/divider-eternal.png" alt="">
+                <div class="container p-4 " style="margin-top: 3rem; background-color: none;">
+                  <!-- <img style="min-width: 20px; max-width: 20rem;" src="assets/img/slide/divider-eternal.png" alt=""> -->
                   <h2 class="animate__animated animate__fadeInDown p-4"
                     style="font-family: 'Times New Roman', sans-serif; font-weight: 400;"> Honor Your Loved Ones <br> at
                     Our Father Eternal and Memorial Garden</h2>
@@ -105,20 +129,100 @@
                   <div>
                     <!-- <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> -->
                     <!-- <button type="submit">Send Message</button> -->
-                    <a data-filter="*" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; " href="#welcome"
-                      class="btn-book animate__animated animate__fadeInUp scrollto">Explore</a>
-                  </div>
+                    <button data-filter="*" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; " data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button"
+                      class="btn btn-book animate__animated animate__fadeInUp scrollto">SCHEDULE AN APPOINTMENT</button>
+             
+                    </div>
                 </div>
               </div>
             </div>
           </div>
+     <!-- Slide 2 -->
+     <div
+     class="carousel-item"
+     style="background-image: url(assets/img/gallery/memorial-park-image-1.jpg)"
+     >
+     <div class="carousel-container">
+      <div class="carousel-container">
+        <div class="carousel-content">
+          <div class="container p-4 " style="margin-top: 3rem; background-color: none;">
+            <!-- <img style="min-width: 20px; max-width: 20rem;" src="assets/img/slide/divider-eternal.png" alt=""> -->
+            <h2 class="animate__animated animate__fadeInDown p-4"
+              style="font-family: 'Times New Roman', sans-serif; font-weight: 400;"> Honor Your Loved Ones <br> at
+              Our Father Eternal and Memorial Garden</h2>
+            <p class="animate__animated animate__fadeInUp">Eternal Rest in a Peaceful, Natural Setting</p>
+            <div>
+              <!-- <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> -->
+              <!-- <button type="submit">Send Message</button> -->
+              <button data-filter="*" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; " data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button"
+                class="btn btn-book animate__animated animate__fadeInUp scrollto">SCHEDULE AN APPOINTMENT</button>
+       
+              </div>
+          </div>
+        </div>
+      </div>
+       </div>
+     </div>
 
+   <!-- Slide 3 -->
+   <div
+     class="carousel-item"
+     style="background-image: url(assets/img/gallery/memorial-park-image-2.jpg)"
+   >
+     <div class="carousel-container">
+      <div class="carousel-container">
+        <div class="carousel-content">
+          <div class="container p-4 " style="margin-top: 3rem; background-color: none;">
+            <!-- <img style="min-width: 20px; max-width: 20rem;" src="assets/img/slide/divider-eternal.png" alt=""> -->
+            <h2 class="animate__animated animate__fadeInDown p-4"
+              style="font-family: 'Times New Roman', sans-serif; font-weight: 400;"> Honor Your Loved Ones <br> at
+              Our Father Eternal and Memorial Garden</h2>
+            <p class="animate__animated animate__fadeInUp">Eternal Rest in a Peaceful, Natural Setting</p>
+            <div>
+              <!-- <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> -->
+              <!-- <button type="submit">Send Message</button> -->
+              <button data-filter="*" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; " data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button"
+                class="btn btn-book animate__animated animate__fadeInUp scrollto">SCHEDULE AN APPOINTMENT</button>
+       
+              </div>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
         </div>
 
       </div>
 
     </div>
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Schedule an appointment</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </section><!-- End Hero -->
@@ -139,9 +243,9 @@
     </div>
     <div class="d-flex align-items-center justify-content-center m-4  px-xl-5">
       <div class="container-fluid row justify-content-evenly  my-5  ">
-        
+        <!-- 052D43 -->
  <div data-aos="fade-up"  class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2 d-flex align-items-center justify-content-center" >
-  <div  class="card " style="width: 22rem; background-color:#052D43; color: aliceblue; border-radius: 0%; ">
+        <div  class="card " style="width: 22rem; background-color:#a89e7d; color: aliceblue; border-radius: 0%; ">
     <div class="card-body ">
       <div class="flex-column d-flex align-items-center justify-content-center">
         <img src="assets/img/slide/corner-borer-top.png" style="width:6rem; height: 4rem; align-self: end;"
@@ -164,7 +268,7 @@
  </div>
 
   <div data-aos="fade-up"  class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2  d-flex align-items-center justify-content-center" >
-    <div class="card " style="width: 22rem; background-color:#052D43; color: aliceblue; border-radius: 0%;">
+    <div class="card " style="width: 22rem; background-color:#a89e7d; color: aliceblue; border-radius: 0%;">
       <div class="card-body ">
         <div class="flex-column d-flex align-items-center justify-content-center">
           <img src="assets/img/slide/corner-borer-top.png" style="width:6rem; height: 4rem; align-self: end;"
@@ -186,7 +290,7 @@
   </div>
 
 <div data-aos="fade-up"  class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2  d-flex align-items-center justify-content-center" >
-  <div class="card " style="width: 22rem; background-color:#052D43; color: aliceblue; border-radius: 0%;">
+  <div class="card " style="width: 22rem; background-color:#a89e7d; color: aliceblue; border-radius: 0%;">
     <div class="card-body ">
       <div class="flex-column d-flex align-items-center justify-content-center">
         <img src="assets/img/slide/corner-borer-top.png" style="width:6rem; height: 4rem; align-self: end;"
@@ -282,7 +386,6 @@
         style="font-family: 'Times New Roman', Times, serif; color: rgb(255, 255, 255); z-index: 2; position: relative; text-align: center;">
         We believe in creating a serene environment that honors the memories of those who have passed. Our values
         include respect, compassion, and dedication to maintaining the garden's natural beauty.</H1>
-        <h5 data-aos="fade-up" style="font-family: 'Times New Roman', Times, serif;  color: rgb(255, 255, 255); z-index: 2; position: relative; text-align: center;">-Mission and Values </h5>
 
   </div>
     </section><!-- End Whu Us Section -->

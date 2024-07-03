@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #052d43;
+  background: #a89e7d;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #052d43;
+  background: #867e64;
   color: #fff;
 }
 
@@ -72,9 +72,10 @@ h6 {
 #topbar {
   padding: 0;
   font-size: 15px;
-  height: 55px;
+  height: 7rem;
   transition: all 0.5s;
-  background: rgba(26, 24, 22, 0.8);
+  /* background: rgba(26, 24, 22, 0.8); */
+  background: none;
   z-index: 996;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -84,7 +85,7 @@ h6 {
 }
 
 #topbar.topbar-scrolled {
-  top: -50px;
+  top: -8rem;
 }
 
 #topbar i {
@@ -102,12 +103,12 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  top: 80px;
+  top: 100px;
   height: 70px;
   z-index: 997;
   transition: all 0.5s;
   padding: 10px 0;
-  background: rgba(26, 24, 22, 0.85);
+  /* background: rgba(26, 24, 22, 0.85); */
 }
 
 #header.header-transparent {
@@ -195,7 +196,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 24px;
+  padding: 1rem;
   font-size: 15px;
   font-weight: 500;
   color: white;
