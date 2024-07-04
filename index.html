@@ -130,7 +130,7 @@
                     <!-- <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> -->
                     <!-- <button type="submit">Send Message</button> -->
                     <button data-filter="*" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; " data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button"
-                      class="btn btn-book animate__animated animate__fadeInUp scrollto">SCHEDULE AN APPOINTMENT</button>
+                      class="btn btn-book animate__animated animate__fadeInUp scrollto">reserve a unit</button>
              
                     </div>
                 </div>
@@ -155,7 +155,7 @@
               <!-- <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> -->
               <!-- <button type="submit">Send Message</button> -->
               <button data-filter="*" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; " data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button"
-                class="btn btn-book animate__animated animate__fadeInUp scrollto">SCHEDULE AN APPOINTMENT</button>
+                class="btn btn-book animate__animated animate__fadeInUp scrollto">reserve a unit</button>
        
               </div>
           </div>
@@ -182,7 +182,7 @@
               <!-- <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> -->
               <!-- <button type="submit">Send Message</button> -->
               <button data-filter="*" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; " data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button"
-                class="btn btn-book animate__animated animate__fadeInUp scrollto">SCHEDULE AN APPOINTMENT</button>
+                class="btn btn-book animate__animated animate__fadeInUp scrollto">reserve a unit</button>
        
               </div>
           </div>
@@ -198,21 +198,91 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Schedule an appointment</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <div class="modal-header" style="display: flex; align-items: center; justify-content: space-between; " >
+            <h5 class="modal-title" id="exampleModalLabel">RESERVATION</h5>
+            <button type="button"  class=" close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <label for="recipient-name" class="col-form-label">LASTNAME</label>
+                <input   type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">FIRSTNAME</label>
                 <input type="text" class="form-control" id="recipient-name">
               </div>
               <div class="form-group">
-                <label for="message-text" class="col-form-label">Message:</label>
+                <label for="recipient-name" class="col-form-label">MIDDLENAME</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+        
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">ADDRESS </label>
                 <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div>
+                <label for="recipient-name" class="col-form-label">BARANGGAY</label>
+                <div class="dropdown ">
+                  <button class="btn border   dropdown-toggle"   style="padding: 1rem .75rem; width: 100%; display: flex; align-items: center; justify-content: end; "  type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label for="recipient-name" class="col-form-label">CITY/TOWN</label>
+                <div class="dropdown ">
+                  <button class="btn border   dropdown-toggle"   style="padding: 1rem .75rem; width: 100%; display: flex; align-items: center; justify-content: end; "  type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label for="recipient-name" class="col-form-label">PROVINCE</label>
+                <div class="dropdown ">
+                  <button class="btn border   dropdown-toggle"   style="padding: 1rem .75rem; width: 100%; display: flex; align-items: center; justify-content: end; "  type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">MOBILE NO</label>
+                <input type="number" class="form-control" id="recipient-name">
+              </div>
+              <div>
+                <label for="recipient-name" class="col-form-label">LOT/UNIT</label>
+                <div class="dropdown ">
+                  <button class="btn border   dropdown-toggle"   style="padding: 1rem .75rem; width: 100%; display: flex; align-items: center; justify-content: end; "  type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">RESERVATION AMOUNT</label>
+                <input type="number" class="form-control" id="recipient-name">
               </div>
             </form>
           </div>
@@ -697,7 +767,7 @@
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="bi bi-phone"></i>
               <h4>Call:</h4>
-              <p>+63 919-081-8398</p>
+              <p>+63 985-544-5589</p>
             </div>
           </div>
         </div>
