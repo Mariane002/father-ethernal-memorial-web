@@ -94,6 +94,7 @@
           <li><a class="nav-link scrollto" href="#FAQ">FAQ's</a></li>
         
           <li><a class="nav-link scrollto" href="#contact">Contacts</a></li>
+          <li><a class="nav-link scrollto" href="/reservation.html">Reservation</a></li>
      
         </ul>
         <i class="bi bi-list mobile-nav-toggle mx-3"  ></i>
@@ -124,7 +125,8 @@
                   <!-- <img style="min-width: 20px; max-width: 20rem;" src="assets/img/slide/divider-eternal.png" alt=""> -->
                   <h2 class="animate__animated animate__fadeInDown p-4"
                     style="font-family: 'Times New Roman', sans-serif; font-weight: 400;"> Honor Your Loved Ones <br> at
-                    Our Father Eternal and Memorial Garden</h2>
+                    Our Father Eternal and Memorial Garden
+                  </h2>
                   <p class="animate__animated animate__fadeInUp">Eternal Rest in a Peaceful, Natural Setting</p>
                   <div>
                     <!-- <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a> -->
@@ -224,7 +226,7 @@
                 <textarea class="form-control" id="message-text"></textarea>
               </div>
               <div>
-                <label for="recipient-name" class="col-form-label">BARANGGAY</label>
+                <label for="recipient-name" class="col-form-label">PROVINCE</label>
                 <div class="dropdown ">
                   <button class="btn border   dropdown-toggle"   style="padding: 1rem .75rem; width: 100%; display: flex; align-items: center; justify-content: end; "  type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     
@@ -250,7 +252,7 @@
                 </div>
               </div>
               <div>
-                <label for="recipient-name" class="col-form-label">PROVINCE</label>
+                <label for="recipient-name" class="col-form-label">BARANGGAY</label>
                 <div class="dropdown ">
                   <button class="btn border   dropdown-toggle"   style="padding: 1rem .75rem; width: 100%; display: flex; align-items: center; justify-content: end; "  type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     
@@ -262,6 +264,8 @@
                   </div>
                 </div>
               </div>
+       
+          
         
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">MOBILE NO</label>
@@ -308,7 +312,7 @@
   <img style="min-width: 8px; max-width: 14rem;" src="assets/img/slide/divider-eternal.png" alt="">
 
 </div>
-    <h1 style="font-family: 'Times New Roman', Times, serif;" class="align-items-center justify-content-center d-flex" >Our Services</h1>
+    <h1 style="font-family: 'Times New Roman', Times, serif;" id="our-services" class="align-items-center justify-content-center d-flex" >Our Services</h1>
    </div>
     </div>
     <div class="d-flex align-items-center justify-content-center m-4  px-xl-5">
@@ -338,7 +342,7 @@
  </div>
 
   <div data-aos="fade-up"  class="col-xl-3 col-lg-12 m-lg-4 m-md-2 m-sm-2  d-flex align-items-center justify-content-center" >
-    <div class="card " style="width: 22rem; background-color:#a89e7d; color: aliceblue; border-radius: 0%;">
+    <div class="card " style="width: 22rem; background-color:#a89e7d;  color: aliceblue; border-radius: 0%;">
       <div class="card-body ">
         <div class="flex-column d-flex align-items-center justify-content-center">
           <img src="assets/img/slide/corner-borer-top.png" style="width:6rem; height: 4rem; align-self: end;"
@@ -796,7 +800,7 @@
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; font-size: larger;">Send</button></div>
+          <div class="text-center"><button type="submit" style="background-color: #88775d; border-color: #88775d; border-radius: 0%; font-size: larger;">Submit</button></div>
         </form>
 
       </div>
@@ -832,6 +836,39 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+
+  <script>
+
+    function myServices(data){
+    document.getElementById("our-services").innerHTML = data;
+    }
+
+    async function myFunciton(){
+      // return "Our Services"
+const url = "https://psgc.cloud/api/provinces"
+try{
+  const response = await fetch(url);
+  if(!response.ok){
+    throw new Error(`Response status: ${response.status}`);
+  }
+ const json = await response.json();
+ console.log(json);
+ let provinceName = ""
+ json.forEach(province =>{
+  console.log(province.name);
+  provinceName += province.name;  
+ })
+return provinceName
+} catch (error){
+  console.error(error.message);
+}
+
+    }
+ 
+    myFunciton().then(
+    function(value) {myServices(value);}
+    );
+  </script>
 
 <script>
   import { Collapse, initMDB } from 'mdb-ui-kit';

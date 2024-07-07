@@ -1729,3 +1729,29 @@ section {
     height: 3rem;
   }
 }
+.col-form-label {
+  color: floralwhite;
+}
+#exampleModal {
+  background-color: #a89e7d;
+  padding: 2rem 4rem;
+}
+
+#main-con {
+  padding: 1rem 8rem;
+}
+@media (max-width: 768px) {
+  #exampleModal {
+    background-color: #a89e7d;
+  }
+  #main-con {
+    padding: 0rem 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #exampleModal {
+    background-color: #a89e7d;
+    padding: 2rem;
+  }
+}
