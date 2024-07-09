@@ -136,46 +136,28 @@
               <textarea class="form-control" id="message-text"></textarea>
             </div>
             <div>
-              <label for="recipient-name" class="col-form-label">PROVINCE</label>
-              <div class="dropdown "  >
-                <button class="btn border dropdown-toggle"   style=" background-color:var(--bs-body-bg); padding: 1rem .75rem; width: 100%; display: flex; align-items: center; justify-content: end; "  type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-              </div>
+              <label for="recipient-name"  class="col-form-label">PROVINCE</label>
+              <select class="form-select" onchange="handleOnchangeProvince(value);"  id="selectedProvince" aria-label="Default select example">
+                <!-- <option selected value="">Select a province...</option> -->
+
+              </select>
+            </div>
             </div>
             <div>
               <label for="recipient-name" class="col-form-label">CITY/TOWN</label>
-              <div class="dropdown ">
-                <button class="btn border   dropdown-toggle"   style="background-color:var(--bs-body-bg);  padding: 1rem .75rem; width: 100%; display: flex; align-items: center; justify-content: end; "  type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-              </div>
+              <select class="form-select" id="cities" onchange="handleOnchangeCities(value);" aria-label="Default select example">
+                <option selected value="">Select your city/town...</option>
+              </select>
             </div>
             <div>
               <label for="recipient-name" class="col-form-label">BARANGAY</label>
-              <div class="dropdown ">
-                <button class="btn border   dropdown-toggle"   style="background-color:var(--bs-body-bg);  padding: 1rem .75rem; width: 100%; display: flex; align-items: center; justify-content: end; "  type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-              </div>
+              <select class="form-select" id="barangay" aria-label="Default select example">
+                <option selected value="">Select your barangay...</option>
+              </select>
             </div>
-     
+            </div>
         
+          
       
             <div class="form-group">
               <label for="recipient-name" class="col-form-label">MOBILE NO</label>
@@ -305,6 +287,94 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+
+    // function myServices(data){
+    // document.getElementsByClassName("form-select").innerHTML = data;
+    // }
+
+    function myServices(options) {
+  document.querySelector('.form-select').innerHTML = options 
+  
+}
+
+    async function myFunciton(){ 
+const url = "https://psgc.cloud/api/provinces"
+try{
+  const response = await fetch(url);
+  if(!response.ok){
+    throw new Error(`Response status: ${response.status}`);
+  }
+ const json = await response.json();
+//  console.log(json);
+ let options = ""
+ json.forEach(province =>{
+  // console.log(province.name);
+  options +=  `<option value="${province.code}">${province.name}</option>`  
+ })
+ 
+return `<option value="-1" selected>Select your province</option>` + options 
+} catch (error){
+  console.error(error.message);
+}
+    }
+    myFunciton().then(
+    function(value) {myServices(value);}
+    );
+
+
+
+    async function handleOnchangeProvince(value){
+// provinceCode = value
+// console.log(value);
+myCitiesFunction(value);
+}
+
+
+async function myCitiesFunction(provinceCode) {
+  const url = `https://psgc.cloud/api/provinces/${provinceCode}/cities-municipalities`;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    const json = await response.json();
+    const cityOptions = json.map((municipality) => {
+      return `<option value="${municipality.code}">${municipality.name}</option>`;
+    });
+    const selectElement = document.getElementById('cities');
+    selectElement.innerHTML = `<option value="-1" selected>Select your cities and municipalities</option>${cityOptions.join('')}`;
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+async function handleOnchangeCities(value){
+// provinceCode = value
+console.log(value);
+myBarangayFunction(value);
+}
+async function myBarangayFunction(citiesCode) {
+  // const url = `https://psgc.cloud/api/provinces//cities-municipalities`;
+  const url = `https://psgc.cloud/api/cities-municipalities/${citiesCode}/barangays`;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    const json = await response.json();
+    const cityOptions = json.map((barangay) => {
+      return `<option value="${barangay.code}">${barangay.name}</option>`;
+    });
+    const selectElement = document.getElementById('barangay');
+    selectElement.innerHTML = `<option value="-1" selected>Select your barangay</option>${cityOptions.join('')}`;
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+
   </script>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

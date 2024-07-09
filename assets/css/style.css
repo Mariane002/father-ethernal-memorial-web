@@ -1755,3 +1755,13 @@ section {
     padding: 2rem;
   }
 }
+#provinceSelect + #searchProvince {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
