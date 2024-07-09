@@ -102,8 +102,6 @@
     onscroll(document, headerScrolled);
   }
 
-  
-
   /**
    * Back to top button
    */
@@ -167,12 +165,6 @@
     true
   );
 
-  onclick("click", ".send-message", function (e) {
-    console.log("object");
-    alert("Try");
-    console.log(e);
-  });
-
   /**
    * Scroll with ofset on page load with hash links in the url
    */
@@ -201,8 +193,6 @@
           index +
           "'></li>");
   });
-
-  
 
   /**
    * Menu isotope and filter
