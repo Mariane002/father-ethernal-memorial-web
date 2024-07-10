@@ -136,8 +136,8 @@
               <textarea class="form-control" id="message-text"></textarea>
             </div>
             <div>
-              <label for="recipient-name"  class="col-form-label">PROVINCE</label>
-              <select class="form-select" onchange="handleOnchangeProvince(value);"  id="selectedProvince" aria-label="Default select example">
+              <label for="recipient-name"   class="col-form-label">PROVINCE</label>
+              <select class="form-select"  onchange="handleOnchangeProvince(value);"  id="selectedProvince" aria-label="Default select example">
                 <!-- <option selected value="">Select a province...</option> -->
 
               </select>
@@ -314,7 +314,7 @@ try{
   options +=  `<option value="${province.code}">${province.name}</option>`  
  })
  
-return `<option value="-1" selected>Select your province</option>` + options 
+return `<option value="-1"  selected>Select your province</option>` + options 
 } catch (error){
   console.error(error.message);
 }
@@ -368,7 +368,7 @@ async function myBarangayFunction(citiesCode) {
       return `<option value="${barangay.code}">${barangay.name}</option>`;
     });
     const selectElement = document.getElementById('barangay');
-    selectElement.innerHTML = `<option value="-1" selected>Select your barangay</option>${cityOptions.join('')}`;
+    selectElement.innerHTML = `<option value="-1"  selected>Select your barangay</option>${cityOptions.join('')}`;
   } catch (error) {
     console.error(error.message);
   }

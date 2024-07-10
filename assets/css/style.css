@@ -33,6 +33,39 @@ h6 {
   font-family: "Satisfy", sans-serif;
 }
 
+.float {
+  z-index: 100;
+  position: fixed;
+  width: 10rem;
+  top: 10rem;
+  right: 40px;
+  background-color: #a89e7d;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  animation: float-enter 1s ease-in backwards;
+}
+.float-enter {
+  animation: float-enter 1s ease-out forwards;
+}
+.float-scale {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-out;
+}
+.float:hover {
+  transform: scale(1.4);
+}
+@keyframes float-enter {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
