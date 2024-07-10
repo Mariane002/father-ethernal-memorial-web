@@ -33,29 +33,34 @@ h6 {
   font-family: "Satisfy", sans-serif;
 }
 
-.float {
+#float {
+  padding: 0.5rem 1rem;
   z-index: 100;
   position: fixed;
-  width: 10rem;
   top: 10rem;
   right: 40px;
-  background-color: #a89e7d;
+  background-color: #88775d;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 20px 5px;
   text-align: center;
-  box-shadow: 2px 2px 3px #999;
+  /* box-shadow: 2px 2px 3px #999; */
   animation: float-enter 1s ease-in backwards;
 }
-.float-enter {
-  animation: float-enter 1s ease-out forwards;
-}
-.float-scale {
+
+#float:hover {
   transform: scale(1.1);
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s;
 }
-.float:hover {
-  transform: scale(1.4);
+
+#float a {
+  color: floralwhite;
+  font-size: 1.3rem;
 }
+#float a:hover {
+  transform: scale(1.1);
+  color: floralwhite;
+}
+
 @keyframes float-enter {
   0% {
     transform: translateY(100%);
@@ -561,6 +566,7 @@ h6 {
 #hero .btn-book:hover {
   background: #ffb03b;
   color: #fff;
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
