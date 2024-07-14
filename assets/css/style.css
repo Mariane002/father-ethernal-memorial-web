@@ -129,7 +129,7 @@ h6 {
 }
 @media (max-width: 706px) {
   #header-button {
-    width: 35%;
+    width: 50%;
   }
   #header-button-content {
     font-size: 1rem;
@@ -149,13 +149,55 @@ h6 {
     top: 4.8rem;
   }
 }
-@media (max-width: 706px) {
-  #header-button {
-    width: 50%;
-  }
 
+.rebolto-1 {
+  position: absolute;
+  z-index: 200;
+  bottom: 0;
+  left: 8rem;
+  width: 22%;
+}
+.rebolto-2 {
+  position: absolute;
+  z-index: 200;
+  bottom: 0;
+  right: 5rem;
+  width: 25%;
 }
 
+@media (max-width: 1890px) {
+  .rebolto-1 {
+    left: 3rem;
+  }
+  .rebolto-2 {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .rebolto-1 {
+    width: 25%;
+  }
+  .rebolto-2 {
+    width: 28%;
+  }
+}
+@media (max-width: 990px) {
+  .rebolto-1 {
+    width: 28%;
+  }
+  .rebolto-2 {
+    width: 30%;
+  }
+}
+@media (max-width: 830px) {
+  .rebolto-1 {
+    display: none;
+  }
+  .rebolto-2 {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
