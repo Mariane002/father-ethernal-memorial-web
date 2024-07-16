@@ -1810,34 +1810,27 @@ section {
   font-size: 13px;
 }
 #home {
-  width: 35rem;
+  width: 20rem;
 }
 @media (max-width: 1500px) {
   #home {
-    width: 35rem;
+    width: 18rem;
   }
 }
 @media (max-width: 1350px) {
   #home {
-    width: 30rem;
+    width: 16rem;
   }
 }
 @media (max-width: 1200px) {
   #home {
-    width: 30rem;
+    width: 15rem;
   }
 }
-@media (max-width: 1020px) {
-  #home {
-    width: 25rem;
-  }
-}
+
 @media (max-width: 990px) {
-  #home {
-    width: 25rem;
-  }
   #flowers {
-    width: 25rem;
+    width: 20rem;
   }
   #home-container {
     display: flex;
@@ -1894,7 +1887,7 @@ section {
     width: 16rem;
   }
   #home {
-    width: 20rem;
+    width: 12rem;
   }
 }
 @media (max-width: 390px) {
