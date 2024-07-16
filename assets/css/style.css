@@ -192,10 +192,10 @@ h6 {
 }
 @media (max-width: 830px) {
   .rebolto-1 {
-    display: none;
+    left: 1rem;
   }
   .rebolto-2 {
-    display: none;
+    right: 1rem;
   }
 }
 /*--------------------------------------------------------------
